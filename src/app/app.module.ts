@@ -14,7 +14,11 @@ import { PastTrainingsComponent } from './training/past-trainings/past-trainings
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-import { MatCheckboxModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import {
+  MatCheckboxModule,
+  MatDatepickerModule,
+  MatNativeDateModule, MatToolbarModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,8 @@ import { MatCheckboxModule, MatDatepickerModule, MatNativeDateModule } from '@an
     FormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
