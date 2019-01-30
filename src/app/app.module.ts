@@ -19,6 +19,8 @@ import {
   MatDatepickerModule, MatListModule,
   MatNativeDateModule, MatToolbarModule
 } from '@angular/material';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import {
     CurrentTrainingComponent,
     NewTrainingComponent,
     PastTrainingsComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HeaderComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
