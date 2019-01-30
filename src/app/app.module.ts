@@ -16,7 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import {
   MatCheckboxModule,
-  MatDatepickerModule,
+  MatDatepickerModule, MatListModule,
   MatNativeDateModule, MatToolbarModule
 } from '@angular/material';
 
@@ -41,7 +41,8 @@ import {
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
