@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./training.component.sass']
 })
 export class TrainingComponent implements OnInit {
-
+  ongoingTraining = false;
   constructor() { }
 
   ngOnInit() {
