@@ -13,7 +13,7 @@ import { NewTrainingComponent } from './training/new-training/new-training.compo
 import { PastTrainingsComponent } from './training/past-trainings/past-trainings.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
   MatCheckboxModule,
   MatDatepickerModule, MatListModule,
@@ -36,7 +36,7 @@ import { AuthService } from './auth/auth.service';
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    StopTrainingComponent,
+    StopTrainingComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +49,8 @@ import { AuthService } from './auth/auth.service';
     MatNativeDateModule,
     MatCheckboxModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent],
