@@ -40,13 +40,13 @@ export class TrainingService {
   }
 
   completeExercise() {
-    this.addDataToDatabase({ ...this.runningExercise, date: new Date(), state: 'completed' });
+    this.addDataToDabase({ ...this.runningExercise, date: new Date(), state: 'completed' });
     this.runningExercise = null;
     this.exerciseChanged.next(null);
   }
 
   cancelExercise(progress: number) {
-    this.addDataToDatabase({
+    this.addDataToDabase({
       ...this.runningExercise,
       duration: this.runningExercise.duration * (progress / 100),
       calories: this.runningExercise.calories * (progress / 100),
@@ -68,10 +68,11 @@ export class TrainingService {
   }
 
   cancelSubscriptions() {
+    console.log('cancel the bastardos: ', this.fbSubs);
     this.fbSubs.forEach(sub => sub.unsubscribe());
   }
 
-  private addDataToDatabase(exercise: Exercise) {
+  private addDataToDabase(exercise: Exercise) {
     this.db.collection('finishedExercises').add(exercise);
   }
 }
