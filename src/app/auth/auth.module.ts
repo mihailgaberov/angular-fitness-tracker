@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCheckboxModule, MatDatepickerModule } from '@angular/material';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MatCheckboxModule, MatDatepickerModule } from '@angular/material';
     MaterialModule,
     FlexLayoutModule,
     MatDatepickerModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    AngularFireAuthModule,
   ],
   exports: []
 })

@@ -21,7 +21,6 @@ import { TrainingService } from './training/training.service';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireAuthModule } from '@angular/fire/auth';
 import { UiService } from './shared/ui.service';
 import { AuthModule } from './auth/auth.module';
 
@@ -52,7 +51,6 @@ import { AuthModule } from './auth/auth.module';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAuthModule,
     AuthModule
   ],
   providers: [AuthService, TrainingService, UiService],
