@@ -18,3 +18,22 @@ https://ng-fitnes-tracker-9241d.firebaseapp.com
 Testing credentials: <br>
 __email__: test@test.com <br>
 __pass__: testtest
+
+### Running The App locally
+
+To run the app, follow these steps.
+
+1. Ensure that [NodeJS](http://nodejs.org/) is installed.
+2. Install [npm](https://www.npmjs.com/).
+3. From the project folder, execute the following commands:
+
+To install dependencies:
+```shell
+  npm i
+```
+To run the client app:
+
+```shell
+  ng serve
+```
+Browse to [http://localhost:4200](http://localhost:4200) and see the running app.
