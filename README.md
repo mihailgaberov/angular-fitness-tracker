@@ -1,8 +1,13 @@
 # Angular Fitness Tracker
 
 An app built for self training purposes.
+
+### Screenshots
+![screenshot](https://github.com/mihailgaberov/angular-fitness-tracker/blob/master/screenshots/fitness-tracker-blue.PNG)
+![screenshot](https://github.com/mihailgaberov/angular-fitness-tracker/blob/master/screenshots/fitness-tracker-red.PNG)
   
-Demo: https://ng-fitnes-tracker-9241d.firebaseapp.com
+### Demo: 
+https://ng-fitnes-tracker-9241d.firebaseapp.com
 
 Testing credentials: <br>
 __email__: test@test.com <br>
