@@ -37,3 +37,5 @@ To run the client app:
   ng serve
 ```
 Browse to [http://localhost:4200](http://localhost:4200) and see the running app.
+
+_Note: you need to have a [Firebase](https://firebase.google.com/) account and to add your credentials in 'src/environments/'_ files.
